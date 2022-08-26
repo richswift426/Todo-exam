@@ -141,3 +141,19 @@ header h1 {
 	margin-bottom:8px;
 	color:#F00;
 }
+
+/**
+ * Additional Options
+ */
+.addons,.letf-number,.control-group{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.control-option{
+	display: inline-block;
+	cursor: pointer;
+	margin: 0px 10px;
+	border: 1px solid #CCC;
+}

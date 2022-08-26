@@ -30,14 +30,24 @@ include( 'application.php' );
 		</label>
 		<button type="submit" hidden>Add Item</button>
 	</form><!-- #new-todo -->
-
 	<!-- the to do list -->
 	<?php
 	if( get_todo_items() ):
 		output_todo_list();
 	endif; ?>
 
-</div><!-- .wrap -->
+	<!-- Additional Options -->
+	<div class="addons">
+		<div class="letf-number">
+			<span><span id="undone">1</span> item lefted</span>
+		</div>
+		<div class="control-group">
+			<span class="control-option">All</span>
+			<span class="control-option">Active</span>
+			<span class="control-option">Completed</span>
+		</div>
+	</div>
 
+</div><!-- .wrap -->
 </body>
 </html>
